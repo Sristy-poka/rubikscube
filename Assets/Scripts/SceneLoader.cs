@@ -19,15 +19,15 @@ public class SceneLoader : MonoBehaviour {
                 break;
             case 2:
                 PlayerSettings.ScrambleRotationTime = 0.35f;
-                PlayerSettings.ScrambleTimes = 7;
+                PlayerSettings.ScrambleTimes = 6;
                 break;
             case 3:
                 PlayerSettings.ScrambleRotationTime = 0.25f;
-                PlayerSettings.ScrambleTimes = 10;
+                PlayerSettings.ScrambleTimes = 8;
                 break;
             case 4:
                 PlayerSettings.ScrambleRotationTime = 0.15f;
-                PlayerSettings.ScrambleTimes = 13;
+                PlayerSettings.ScrambleTimes = 12;
                 break;
             case 5:
                 PlayerSettings.ScrambleRotationTime = 0.1f;
@@ -35,23 +35,23 @@ public class SceneLoader : MonoBehaviour {
                 break;
             case 6:
                 PlayerSettings.ScrambleRotationTime = 0.08f;
-                PlayerSettings.ScrambleTimes = 19;
+                PlayerSettings.ScrambleTimes = 20;
                 break;
             case 7:
                 PlayerSettings.ScrambleRotationTime = 0.07f;
-                PlayerSettings.ScrambleTimes = 22;
+                PlayerSettings.ScrambleTimes = 25;
                 break;
             case 8:
                 PlayerSettings.ScrambleRotationTime = 0.06f;
-                PlayerSettings.ScrambleTimes = 25;
+                PlayerSettings.ScrambleTimes = 30;
                 break;
             case 9:
                 PlayerSettings.ScrambleRotationTime = 0.05f;
-                PlayerSettings.ScrambleTimes = 28;
+                PlayerSettings.ScrambleTimes = 40;
                 break;
             case 10:
                 PlayerSettings.ScrambleRotationTime = 0.04f;
-                PlayerSettings.ScrambleTimes = 30;
+                PlayerSettings.ScrambleTimes = 50;
                 break;
             default:
                 PlayerSettings.ScrambleRotationTime = 0.5f;
@@ -59,8 +59,9 @@ public class SceneLoader : MonoBehaviour {
                 break;
 
         }
-      chooseDifficulty.SetActive(false);
-      chooseSizeScreen.SetActive(true);
+        //chooseDifficulty.SetActive(false);
+        //chooseSizeScreen.SetActive(true);
+        LoadCube3(1);
    }
 
     public void intoChooseDifficulty()
