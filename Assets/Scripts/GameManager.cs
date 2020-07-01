@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+ 
       //PlayerSettings.CubeSize = 3;
       PlayerSettings.TimerOn = true;
       PlayerSettings.GyroOn = false;
@@ -42,6 +43,9 @@ public class GameManager : MonoBehaviour {
       bigCubeInstance.transform.position = transform.position;
       bigCubeInstance.GenerateCube();
       Invoke("ScrambleCube", 0.5f);
+
+
+        
    }
 	
 	// Update is called once per frame
