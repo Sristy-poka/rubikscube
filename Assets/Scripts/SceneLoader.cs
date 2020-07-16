@@ -61,7 +61,7 @@ public class SceneLoader : MonoBehaviour {
         }
         //chooseDifficulty.SetActive(false);
         //chooseSizeScreen.SetActive(true);
-        LoadCube3(1);
+        LoadCube3(2);
    }
 
     public void intoChooseDifficulty()
